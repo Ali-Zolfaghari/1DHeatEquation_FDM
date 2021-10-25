@@ -16,10 +16,10 @@
 %*   Methods ID
 %*               SimpleExplicit = 1
 %*               SimpleImplicit = 2
-%*                CrankNicolson = 3
-%*                 CombineTypeA = 4
-%*                 CombineTypeB = 5
-%*                DufortFrankel = 6
+%*               CrankNicolson  = 3
+%*               CombineTypeA   = 4
+%*               CombineTypeB   = 5
+%*               DufortFrankel  = 6
 %*   L          (domain length                                            )
 %*   M          (number of division of domain                             )
 %*   dt         (time step                                                )
