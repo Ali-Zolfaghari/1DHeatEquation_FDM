@@ -20,15 +20,15 @@
 %*                 CombineTypeA = 4
 %*                 CombineTypeB = 5
 %*                DufortFrankel = 6
-%*   L          (domain length  )
-%*   M          (number of division of domain   )
-%*   dt         (time step  )
-%*   FinalTime  (stop criteria time   )
-%*   Tl         (temperature of left boundary   )
-%*   Tr         (temperature of right boundary   )
-%*   T0         (initial temperature   )
-%*   MAXERROR   (max. allowable error   )
-%*   alpha      (underrelaxtion factor   )
+%*   L          (domain length                                            )
+%*   M          (number of division of domain                             )
+%*   dt         (time step                                                )
+%*   FinalTime  (stop criteria time                                       )
+%*   Tl         (temperature of left boundary                             )
+%*   Tr         (temperature of right boundary                            )
+%*   T0         (initial temperature                                      )
+%*   MAXERROR   (max. allowable error                                     )
+%*   alpha      (underrelaxtion factor                                    )
 %*   Solver     (1: MATLAB solver - 2: Successive over-relaxation solver  )
 %*   Outputs     :
 %*   plot numerical and exact solution of temperature distribution
