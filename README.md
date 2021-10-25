@@ -10,5 +10,4 @@ Methods of solving : (finite differences methods)
 - CombineTypeB
 - DufortFrankel
 
-![image](https://user-images.githubusercontent.com/77577542/138682427-274d49c8-f730-4a9f-ac0b-228af2b490d0.png)
-
+![image](https://user-images.githubusercontent.com/77577542/138692240-6a26a7c8-adc6-40c2-8604-11bbfe4002e5.png)
