@@ -1,6 +1,6 @@
 
 %***************************************************************************************************
-%*   Calculate adiabatic flame temperature by presented code.
+%*   Solve 1D-heat equation by presented code.
 %*   I take no responsibilities for any errors in the code or damage thereby.
 %*   Please notify me at zolfaghari1992iut@gmail.com if the code is used in any type of application.
 %***************************************************************************************************
@@ -10,8 +10,8 @@
 %*   Computational Fluid Mechanics and Heat Transfer.
 %*   by John C. Tannehill (Author), Dale Anderson (Author), Richard H. Pletcher (Author).
 %***************************************************************************************************
-%*   Equation of complete combustion reaction   :   
-%*   natural gas (methane + ethane + propane + butane) + air (O2 + N2) ----> CO2 + H2O + N2
+%*   Heat Equation in one-dimensional domain by Dirichlet boundary condition. (solving by finite differences methods)   :   
+%*   Ut = a . Uxx
 %*   Inputs      :
 %*   Methods ID
 %*               SimpleExplicit = 1
