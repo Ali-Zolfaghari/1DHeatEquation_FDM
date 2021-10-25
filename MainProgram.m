@@ -1,16 +1,44 @@
+
+%***************************************************************************************************
+%*   Calculate adiabatic flame temperature by presented code.
+%*   I take no responsibilities for any errors in the code or damage thereby.
+%*   Please notify me at zolfaghari1992iut@gmail.com if the code is used in any type of application.
+%***************************************************************************************************
+%*   Developer   : Ali Zolfaghari Sichani (10-03-2017)
+%***************************************************************************************************
+%*   References  : 
+%*   Computational Fluid Mechanics and Heat Transfer.
+%*   by John C. Tannehill (Author), Dale Anderson (Author), Richard H. Pletcher (Author).
+%***************************************************************************************************
+%*   Equation of complete combustion reaction   :   
+%*   natural gas (methane + ethane + propane + butane) + air (O2 + N2) ----> CO2 + H2O + N2
+%*   Inputs      :
+%*   Methods ID
+%*               SimpleExplicit = 1
+%*               SimpleImplicit = 2
+%*                CrankNicolson = 3
+%*                 CombineTypeA = 4
+%*                 CombineTypeB = 5
+%*                DufortFrankel = 6
+%*   L          (domain length  )
+%*   M          (number of division of domain   )
+%*   dt         (time step  )
+%*   FinalTime  (stop criteria time   )
+%*   Tl         (temperature of left boundary   )
+%*   Tr         (temperature of right boundary   )
+%*   T0         (initial temperature   )
+%*   MAXERROR   (max. allowable error   )
+%*   alpha      (underrelaxtion factor   )
+%*   Solver     (1: MATLAB solver - 2: Successive over-relaxation solver  )
+%*   Outputs     :
+%*   plot numerical and exact solution of temperature distribution
+%***************************************************************************************************
+
+
 clear,clc,close all
 format compact
 format long
 
-
-% Methods ID:
-%               SimpleExplicit = 1
-%               SimpleImplicit = 2
-%                CrankNicolson = 3
-%                 CombineTypeA = 4
-%                 CombineTypeB = 5
-%                DufortFrankel = 6
-S = {'SimpleExplicit','SimpleImplicit','CrankNicolson','CombineTypeA','CombineTypeB','DufortFrankel'};
 
 %% input
 L = 1.0;
@@ -25,7 +53,10 @@ MAXERROR = 0.001;
 Ws = 0.85;
 Solver = 1;
 
+
+
 %% initial
+S = {'SimpleExplicit','SimpleImplicit','CrankNicolson','CombineTypeA','CombineTypeB','DufortFrankel'};
 dx = L/M;
 x = 0.0:dx:L;
 Teta_A = 0.5-((dx*dx)/(12.0*alpha*dt));
